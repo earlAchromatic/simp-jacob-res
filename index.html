@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JacobMilhorn.com</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+      integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="shadow-1">
+      <center-l max="50%" intrinsic>
+        <img src="images/logo.png" alt="" />
+      </center-l>
+    </nav>
+    <main>
+      <cover-l
+        id="offset"
+        centered="center-l"
+        noPad
+        style="background: var(--color-1)"
+      >
+        <center-l max="90vw">
+          <stack-l>
+            <section>
+              <box-l>
+                <stack-l>
+                  <h1>About Jacob</h1>
+                  <h2>Story</h2>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Facilis recusandae quod veritatis vel iusto, quibusdam
+                    quidem placeat corrupti quos, minima officia assumenda
+                    debitis unde doloribus iure inventore doloremque dolorem
+                    molestiae.
+                  </p>
+                  <h2>Professional Experience</h2>
+                  <h3>Programming & Web Dev</h3>
+                  <h3>Mechanical Design</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Facilis recusandae quod veritatis vel iusto, quibusdam
+                    quidem placeat corrupti quos, minima officia assumenda
+                    debitis unde doloribus iure inventore doloremque dolorem
+                    molestiae.
+                  </p>
+                </stack-l>
+              </box-l>
+            </section>
+            <section class="technologies" x-data="getTechList()">
+              <h2>Technologies</h2>
+              <h3>Foundations</h3>
+              <template x-for="tech in techlist">
+                <reel-l itemWidth="6rem" space="var(--s1)">
+                  <template x-for="item in tech">
+                    <box-l padding="var(--s1)">
+                      <stack-l>
+                        <frame-l ratio="1:1">
+                          <img :src="item.imgUrl" alt="" />
+                        </frame-l>
+                        <hr />
+                        <h4 x-text="item.title"></h4>
+                        <p x-text="item.blurb"></p>
+                      </stack-l>
+                    </box-l>
+                  </template>
+                </reel-l>
+              </template>
+            </section>
+            <section>
+              <stack-l>
+                <h2>Hobbies & Interests</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Facilis recusandae quod veritatis vel iusto, quibusdam quidem
+                  placeat corrupti quos, minima officia assumenda debitis unde
+                  doloribus iure inventore doloremque dolorem molestiae.
+                </p>
+              </stack-l>
+            </section>
+          </stack-l>
+        </center-l>
+
+        <footer>
+          <cluster-l justify="space-between">
+            <div>
+              <span>Phone: 740-641-7921</span>
+              <span>Email: jacob.milhorn@gmail.com</span>
+              <span>Github: </span>
+            </div>
+          </cluster-l>
+        </footer>
+      </cover-l>
+    </main>
+
+    <script src="./js/l-components.js"></script>
+    <script src="./js/techList.js"></script>
+  </body>
+</html>
