@@ -28,7 +28,7 @@ function getTechList() {
             imgUrl: "./images/tech/ts-logo-512.png",
             title: "Typescript",
             blurb:
-              "Javascript makes things move sometimes quite unreliably without a healthy dose of Typescript.",
+              "Javascript makes things move, but sometimes quite unreliably without a healthy dose of Typescript.",
           },
           {
             imgUrl: "./images/tech/node.png",
