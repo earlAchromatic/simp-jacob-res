@@ -41,7 +41,7 @@ class Box extends HTMLElement {
             }
         
             [data-i="${this.i}"] {
-              background-color: inherit;
+              background-color: inherit ;
             }
           `
           .replace(/\s\s+/g, " ")

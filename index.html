@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="HC">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -16,55 +16,237 @@
       defer
       src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
     ></script>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@400;700&family=Major+Mono+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <nav class="shadow-1">
+    <nav class="shadow-2">
       <center-l max="50%" intrinsic>
         <img src="images/logo.png" alt="" />
       </center-l>
     </nav>
-    <main>
-      <cover-l
-        id="offset"
-        centered="center-l"
-        noPad
-        style="background: var(--color-1)"
-      >
-        <center-l max="90vw">
-          <stack-l>
-            <section>
-              <box-l>
-                <stack-l>
-                  <h1>About Jacob</h1>
-                  <h2>Story</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Facilis recusandae quod veritatis vel iusto, quibusdam
-                    quidem placeat corrupti quos, minima officia assumenda
-                    debitis unde doloribus iure inventore doloremque dolorem
-                    molestiae.
-                  </p>
-                  <h2>Professional Experience</h2>
-                  <h3>Programming & Web Dev</h3>
-                  <h3>Mechanical Design</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Facilis recusandae quod veritatis vel iusto, quibusdam
-                    quidem placeat corrupti quos, minima officia assumenda
-                    debitis unde doloribus iure inventore doloremque dolorem
-                    molestiae.
-                  </p>
-                </stack-l>
-              </box-l>
-            </section>
-            <section class="technologies" x-data="getTechList()">
-              <h2>Technologies</h2>
-              <h3>Foundations</h3>
-              <template x-for="tech in techlist">
-                <reel-l itemWidth="6rem" space="var(--s1)">
-                  <template x-for="item in tech">
-                    <box-l padding="var(--s1)">
+    <main id="offset">
+      <center-l max="90vw">
+        <stack-l>
+          <section>
+            <box-l class="HC" style="background: var(--color-1)">
+              <stack-l>
+                <h1>About Jacob</h1>
+                <h2>Story</h2>
+                <p>
+                  Hey. I'm Jacob. If I had to sum up my personality and
+                  motivations in a short description, I would tell you this: I
+                  am a problem solver. I graduated in 2016 with a degree in
+                  Mechanical Engineering with the goal of becoming a designer.
+                  With a few years of automation systems design under my belt, I
+                  moved back into the familiar territory of R&D, this time in
+                  the world of Aerospace.
+
+                  <br /><br />
+                  I had originally went into Mech. Eng. because I thought it
+                  would put me into a position to solve the problems at the
+                  cutting edge of what humanity is capable of. Only, as the
+                  years went by and I learned more, I realized time and time
+                  again that the cutting edge requires computation at
+                  increasingly more demanding scales. I began to realize that I
+                  needed a new set of skills in order to get myself into the
+                  position I had wanted to be in years prior. So I followed the
+                  technology and put my previous experiences and design
+                  capabilities to work to pursue software engineeering and
+                  explore solutions to big problems.
+                  <br /><br />
+                  As the pandemic hit and layoffs happened, I took the
+                  opportunity to build something. I hadn't programmed anything
+                  serious in several years, but nevertheless, I pushed through
+                  the sea of things I didn't know and prototyped a real estate
+                  app in excel, written in visual basic. My love for programming
+                  was rekindled, and after deciding that I wasn't skilled enough
+                  to build the real estate app the way that it needed to be done
+                  - as a web app- I began to teach myself web development full
+                  time.
+                </p>
+                <h2>Professional Experience</h2>
+                <h3>Programming & Web Dev</h3>
+                <ul>
+                  <li>
+                    <span
+                      >1.5 years full-time experience as a self-employed
+                      developer at
+                      <a href="https://hyperionweb.dev"
+                        >Hyperion Web, a digital marketing firm that I
+                        started.</a
+                      ></span
+                    >
+                  </li>
+                  <li>
+                    <span
+                      >Miscellaneous Web Design and Programming projects since
+                      2017 as a side interest. All of them failures. I learned a
+                      lot!
+                    </span>
+                  </li>
+                  <li>
+                    <span
+                      >Designed and programmed Arduino microcontroller systems
+                      for senior engineering project which was an ambitious
+                      diver propulsion vehicle.
+                    </span>
+                  </li>
+                </ul>
+                <h3>Mechanical Design</h3>
+                <p>
+                  Even though my focus is software now, I find quite a lot of
+                  value in the overlap of Mechanical Design and Software Design.
+                  I list some of my accomplishments here in light of this, and I
+                  hope you see the value in them also.
+                </p>
+                <ul>
+                  <li>
+                    <span
+                      >3 years designing and developing electro-magnetic
+                      induction tooling for Boeing and Department of
+                      Energy.</span
+                    >
+                  </li>
+                  <li>
+                    <span
+                      >Designed and managed magnetic high-strength armor forming
+                      experiment and fixture development.</span
+                    >
+                  </li>
+                  <li>
+                    <span
+                      >1.5 years designing automation and conveyor systems in
+                      the dairy industry.</span
+                    >
+                  </li>
+                </ul>
+                <h3>Publications</h3>
+                <ul>
+                  <li>
+                    <span
+                      >2 Published Papers on Identification of Noise Sources for
+                      Toyota:</span
+                    >
+                    <ul>
+                      <li>
+                        <a
+                          href="https://saemobilus.sae.org/content/2016-01-1300/"
+                          >Road Tests of the Acoustic Loads on the Back Panels
+                          of a Pickup Truck</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://saemobilus.sae.org/content/2016-01-1316/"
+                          >Vehicle Wind Noise Measurements in a Wind Tunnel with
+                          a Contoured Top Profile</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </stack-l>
+              <div x-data="{open:true}">
+                <div
+                  class="portrait"
+                  @click="open=false"
+                  x-show="open"
+                  x-transition.duration.1000ms.opacity
+                >
+                  <box-l
+                    id="message"
+                    style="background: var(--color-5)"
+                    x-data="getMessenger()"
+                    x-show="open"
+                    x-init="delayedStart()"
+                    x-transition
+                  >
+                  </box-l>
+                  <img src="images/jacobtoon2.png" alt="" />
+                  <img id="cubes" src="images/jacobcubes.png" alt="" />
+                  <svg
+                    width="100%"
+                    id="blob"
+                    viewBox="0 0 200 200"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill="#F2F4F8"
+                      d="M25.6,-42.6C39.8,-36.1,62.5,-42.7,66.1,-37.8C69.7,-32.8,54.1,-16.4,49.9,-2.4C45.7,11.6,52.9,23.1,50.3,29.7C47.7,36.4,35.3,38,25.3,43.5C15.3,48.9,7.6,58.1,-3,63.2C-13.6,68.4,-27.2,69.5,-37.8,64.4C-48.3,59.3,-55.9,48,-63.7,36.2C-71.4,24.4,-79.5,12.2,-81.6,-1.2C-83.7,-14.6,-79.9,-29.3,-70.9,-39C-61.9,-48.7,-47.8,-53.5,-35.1,-60.9C-22.5,-68.3,-11.2,-78.3,-2.8,-73.5C5.7,-68.7,11.4,-49.1,25.6,-42.6Z"
+                      transform="translate(100 100)"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </box-l>
+          </section>
+          <section class="technologies" x-data="getTechList()">
+            <box-l
+              class="colorSwitcher"
+              x-data="getColorWheel()"
+              x-init="$watch('currentColor', value=>addProperties(value))"
+              style="background: var(--color-2)"
+            >
+              <cluster-l>
+                <div>
+                  <button
+                    @click="currentColor = makeStyleArray(colors[0].multiorange, colorString); triggerContrast()"
+                  >
+                    Multi
+                  </button>
+                  <button
+                    @click="currentColor = makeStyleArray(colors[1].greens, colorString); triggerContrast()"
+                  >
+                    Green
+                  </button>
+                  <button
+                    @click="currentColor = makeStyleArray(colors[2].yellows, colorString); triggerContrast()"
+                  >
+                    Yellow
+                  </button>
+                  <button
+                    @click="currentColor = makeStyleArray(colors[3].darks, colorString); triggerContrast()"
+                  >
+                    Dark
+                  </button>
+                  <button
+                    @click="currentColor = makeStyleArray(colors[4].purples, colorString); triggerContrast()"
+                  >
+                    Teal
+                  </button>
+                  <button
+                    @click="currentColor=invertStyleArray(currentColor, colorString); triggerContrast()"
+                  >
+                    invert
+                  </button>
+                </div>
+              </cluster-l>
+            </box-l>
+            <h2>Technologies</h2>
+            <p>
+              These are the technologies that I know and love. I tend to
+              experiment and dabble in a lot of different technologies in order
+              to keep on top of cutting edge trends. But the tech here is all
+              tried and true - stuff I have the bulk of my experience in. If its
+              on the list, I have used it in production, not just tooled around
+              with it.
+            </p>
+            <template x-for="(tech,i) in techlist">
+              <div>
+                <h3 x-text="Object.keys(tech)[0]"></h3>
+                <reel-l itemWidth="10rem" space="var(--s1)">
+                  <template x-for="(item,j) in Object.values(tech)[0]">
+                    <box-l
+                      class="HC"
+                      padding="var(--s1)"
+                      :style="{ background: `var(--color-${colorNum-j})`, color: `var(--color-${0+j})`}"
+                    >
                       <stack-l>
                         <frame-l ratio="1:1">
                           <img :src="item.imgUrl" alt="" />
@@ -76,35 +258,219 @@
                     </box-l>
                   </template>
                 </reel-l>
-              </template>
-            </section>
-            <section>
+              </div>
+            </template>
+          </section>
+          <section
+            class="Portfolio"
+            x-data="getPortfolio()"
+            x-init="()=>{checkResize()}"
+          >
+            <h2>Portfolio</h2>
+            <sidebar-l space="0" sidewidth="20rem" contentMin="60%">
+              <div>
+                <box-l class="sidebar HC" style="background: var(--color-5)">
+                  <cluster-l>
+                    <div>
+                      <div class="picker">
+                        <cluster-l justify="start">
+                          <div>
+                            <stack-l>
+                              <h5><strong>Premium Sites</strong></h5>
+                              <template x-for="item in sites">
+                                <template x-if="filterPremiumSites(item.tags)">
+                                  <a
+                                    class="site-item"
+                                    x-text="item.id"
+                                    @click="updateSrc(item.id)"
+                                  ></a>
+                                </template>
+                              </template>
+                            </stack-l>
+                            <stack-l>
+                              <h5><strong>Applications</strong></h5>
+                              <template x-for="item in sites">
+                                <template x-if="filterApps(item.tags)">
+                                  <a
+                                    class="site-item"
+                                    x-text="item.id"
+                                    @click="updateSrc(item.id)"
+                                  ></a>
+                                </template>
+                              </template>
+                            </stack-l>
+                          </div>
+                        </cluster-l>
+                      </div>
+                      <p>Select a device to see real time responsiveness!</p>
+                      <cluster-l class="view-selector">
+                        <box-l>
+                          <template x-for="item in devices">
+                            <stack-l>
+                              <img
+                                x-bind:src="item.iconPath"
+                                alt=""
+                                @click="updateDevice(item.name)"
+                              />
+                              <p x-text="item.name"></p>
+                            </stack-l>
+                          </template>
+                          <br />
+                        </box-l>
+                      </cluster-l>
+                    </div>
+                  </cluster-l>
+                </box-l>
+                <div class="content-bar">
+                  <div class="viewer-container">
+                    <div class="viewer">
+                      <div class="frame-scale">
+                        <iframe
+                          x-bind:src="src"
+                          x-bind:width="width"
+                          x-bind:height="height"
+                          x-bind:style="`transform: scale(${scale}); left: ${marginLeft}px`"
+                          title="portfolio"
+                        ></iframe>
+                        <p>Go Ahead, Scroll Around!</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </sidebar-l>
+          </section>
+          <section>
+            <h2>Ongoing Projects!</h2>
+            <center-l max="80%">
               <stack-l>
-                <h2>Hobbies & Interests</h2>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Facilis recusandae quod veritatis vel iusto, quibusdam quidem
-                  placeat corrupti quos, minima officia assumenda debitis unde
-                  doloribus iure inventore doloremque dolorem molestiae.
-                </p>
-              </stack-l>
-            </section>
-          </stack-l>
-        </center-l>
+                <box-l style="background-color: var(--color-7)">
+                  <sidebar-l sidewidth="10rem" contentMin="">
+                    <div>
+                      <div>
+                        <frame-l ratio="1:1">
+                          <img src="/images/HyperionBackground.png" alt="" />
+                        </frame-l>
+                      </div>
 
-        <footer>
-          <cluster-l justify="space-between">
-            <div>
-              <span>Phone: 740-641-7921</span>
-              <span>Email: jacob.milhorn@gmail.com</span>
-              <span>Github: </span>
-            </div>
-          </cluster-l>
-        </footer>
-      </cover-l>
+                      <stack-l>
+                        <h3>Hyperion Web</h3>
+                        <p>
+                          Hyperion Web is my brainchild. My long term goal is to
+                          turn it into a tech incubator that licenses creative
+                          software tools. In the short term, its a marketing
+                          company with a focus on getting extremely well
+                          performing sites into the hands of small business
+                          owners. Serving these clients has informed a lot of my
+                          trajectory for what value-add tooling may look like.
+                        </p>
+                      </stack-l>
+                    </div>
+                  </sidebar-l>
+                </box-l>
+                <box-l style="background-color: var(--color-4)">
+                  <sidebar-l sidewidth="10rem" contentMin="" row-reverse>
+                    <div>
+                      <div>
+                        <frame-l ratio="1:1">
+                          <img src="/images/collider.jpeg" alt="" />
+                        </frame-l>
+                      </div>
+                      <stack-l>
+                        <h3>Collider</h3>
+                        <p>
+                          Collider is a big experiment in elementary component
+                          design. I have some ambitions for a full-fledged
+                          modular library that is built on the premise that
+                          complex apps and sites are built of chains of smaller
+                          sub-components, sort of like chains of molecules. My
+                          experience revisiting common sets of UI components for
+                          each site time after time has me interested in
+                          developing this for use at Hyperion, serving clients.
+                        </p>
+                      </stack-l>
+                    </div>
+                  </sidebar-l>
+                </box-l>
+                <box-l style="background: var(--color-2)">
+                  <sidebar-l sidewidth="10rem" contentMin="">
+                    <div>
+                      <div>
+                        <frame-l ratio="1:1">
+                          <img src="/images/QuantumThoughtCo.png" alt="" />
+                        </frame-l>
+                      </div>
+                      <stack-l>
+                        <h3>Quantum Thought Co.</h3>
+                        <p>
+                          Quantum Thought is a blog I dreamt up as a platform
+                          for me to think and write about creativity. I have a
+                          lot of experience synthesizing ideas and designs and
+                          so its really fun to dive a bit deeper into how the
+                          human brain works to achieve such creative synthesis.
+                          There is a lot of overlap with the field of
+                          computational creativity, which I am quite taken by.
+                        </p>
+                      </stack-l>
+                    </div>
+                  </sidebar-l>
+                </box-l>
+              </stack-l>
+            </center-l>
+          </section>
+          <!-- <section>
+            <h2>Books I Love</h2>
+          </section> -->
+          <section>
+            <stack-l>
+              <h2>Hobbies & Interests</h2>
+              <ul>
+                <li>
+                  Reading & Learning. I take great pride in my curated digital
+                  library of best books on a given topic. I have to remind
+                  myself that if I read <i>all</i> the time, I never get the
+                  doing done. Its my go-to.
+                </li>
+                <li>
+                  Physics. I like to think long and hard about the underlying
+                  mechanics of things. Lots of Open Courseware lectures!
+                </li>
+                <li>
+                  Kite Flying. Not that kind of kite. Power kites are like the
+                  kind that you would use kite-boarding in the ocean. I do it on
+                  land on a mountain board. Its a good time.
+                </li>
+                <li>
+                  Real Estate Investing. I have an old house I am renovating.
+                  The plan is to buy 'em and hold 'em.
+                </li>
+                <li>
+                  My Wife and Dog are the greatest little family a guy could ask
+                  for. We do a lot of hiking. and tons of goofin around.
+                </li>
+              </ul>
+            </stack-l>
+          </section>
+        </stack-l>
+      </center-l>
+
+      <footer>
+        <cluster-l justify="space-between">
+          <div>
+            <span>phone: 740-641-7921</span>
+            <span>Email: jacob.milhorn@gmail.com</span>
+            <a href="https://github.com/earlAchromatic">github</a>
+          </div>
+        </cluster-l>
+      </footer>
     </main>
 
     <script src="./js/l-components.js"></script>
     <script src="./js/techList.js"></script>
+    <script src="./js/portfolio.js"></script>
+    <script src="./js/color.js"></script>
+    <!-- <script src="./js/hueRotate.js"></script> -->
+    <script src="./js/messenger.js"></script>
+    <script src="./js/highContrast.js"></script>
   </body>
 </html>
