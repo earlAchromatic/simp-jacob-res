@@ -113,6 +113,18 @@ function getTechList() {
               "One of the more versatile charting libraries that I have found.",
           },
           {
+            imgUrl: "./images/tech/lighthouse.svg",
+            title: "Google Lighthouse",
+            blurb:
+              "I use lighthouse extensively as my primary testing framework. I am a stickler for site optimization and have built an automation application for running batch tests using the lighthouse CLI.",
+          },
+          {
+            imgUrl: "./images/tech/vscode.png",
+            title: "VS Code",
+            blurb:
+              "Visual Studio Code is my go-to IDE. I love its extension marketplace, configurability and seamless Typescript integration.",
+          },
+          {
             imgUrl: "./images/tech/netlify.png",
             title: "Netlify",
             blurb:
@@ -130,23 +142,23 @@ function getTechList() {
             blurb: "This is where I manage my servers on droplets.",
           },
 
-          {
-            imgUrl: "./images/tech/Mailchimp-Logo.png",
-            title: "Mailchimp",
-            blurb:
-              "I use the mailchimp API to manage market segments automatically as people submit forms on a site.",
-          },
+          // {
+          //   imgUrl: "./images/tech/Mailchimp-Logo.png",
+          //   title: "Mailchimp",
+          //   blurb:
+          //     "I use the mailchimp API to manage market segments automatically as people submit forms on a site.",
+          // },
           {
             imgUrl: "./images/tech/wordsapi.png",
             title: "Words API",
             blurb:
               "This is a cool API that is based on WordNet, the Princeton University lexical database of English words.",
           },
-          {
-            imgUrl: "./images/tech/snipcart.jpeg",
-            title: "Snipcart",
-            blurb: "Simple E-commerce for statically generated sites.",
-          },
+          // {
+          //   imgUrl: "./images/tech/snipcart.jpeg",
+          //   title: "Snipcart",
+          //   blurb: "Simple E-commerce for statically generated sites.",
+          // },
         ],
       },
     ],
