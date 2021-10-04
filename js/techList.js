@@ -55,7 +55,7 @@ function getTechList() {
             imgUrl: "./images/tech/vue.png",
             title: "Vue 2 & 3",
             blurb:
-              "Community-driven, incrementally adoptable reactive framework for building user interfaces.",
+              "Community-driven, incrementally adoptable reactive framework for building user interfaces. Prefer Vue 3 as it lends great new functionality such as full Typescript compatibility and the Composition API.",
           },
           {
             imgUrl: "./images/tech/11ty.png",
@@ -101,6 +101,18 @@ function getTechList() {
             blurb: "How did they come up with Octocat anyways?",
           },
           {
+            imgUrl: "./images/tech/webpack.png",
+            title: "Webpack",
+            blurb:
+              "I use webpack to bundle code for building libraries that rely on node modules. It is especially useful when using Vue as I prefer the SFC (single file component) syntax and file organization it allows.",
+          },
+          {
+            imgUrl: "./images/tech/apexchart.png",
+            title: "Apex Chart",
+            blurb:
+              "One of the more versatile charting libraries that I have found.",
+          },
+          {
             imgUrl: "./images/tech/netlify.png",
             title: "Netlify",
             blurb:
@@ -117,12 +129,7 @@ function getTechList() {
             title: "Digital Ocean",
             blurb: "This is where I manage my servers on droplets.",
           },
-          {
-            imgUrl: "./images/tech/apexchart.png",
-            title: "Apex Chart",
-            blurb:
-              "One of the more versatile charting libraries that I have found.",
-          },
+
           {
             imgUrl: "./images/tech/Mailchimp-Logo.png",
             title: "Mailchimp",
