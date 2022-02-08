@@ -663,6 +663,7 @@ nav img {
           transform: scale(1.5) rotate(180deg);
   -webkit-filter: drop-shadow(var(--box-shadow));
           filter: drop-shadow(var(--box-shadow));
+  pointer-events: none;
 }
 
 #blob path {

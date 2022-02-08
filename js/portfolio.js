@@ -1,91 +1,99 @@
 function getPortfolio() {
   return {
-    device: "desktop",
+    device: 'desktop',
     width: 1281,
     height: 800,
     scale: 0.468384075,
     marginLeft: 0,
     breakpoint: 1280,
-    src: "https://stout-law-temp.netlify.app",
+    src: 'https://ionia.localweb.co',
     sites: [
       {
-        id: "Powered Engineering",
-        imgPath: "/images/Samples/poweredengineering.png",
-        src: "https://poweredengineering.com",
-        tags: ["Premium"],
+        id: 'Stout Law',
+        imgPath: '/images/Samples/StoutLaw.png',
+        src: 'https://stout-law-temp.netlify.app',
+        tags: ['down'],
       },
       {
-        id: "Automaton",
-        imgPath: "/images/Samples/Automaton.png",
-        src: "https://automatereal.estate",
-        tags: ["Premium"],
+        id: 'Powered Engineering',
+        imgPath: '/images/Samples/poweredengineering.png',
+        src: 'https://poweredengineering.com',
+        tags: ['Premium'],
+      },
+
+      {
+        id: 'Local Web',
+        imgPath: '/images/Samples/localweblogo.png',
+        src: 'https://ionia.localweb.co',
+        tags: ['Premium'],
       },
       {
-        id: "Stout Law",
-        imgPath: "/images/Samples/StoutLaw.png",
-        src: "https://stout-law-temp.netlify.app",
-        tags: ["Premium"],
+        id: 'Automaton',
+        imgPath: '/images/Samples/Automaton.png',
+        src: 'https://automatereal.estate',
+        tags: ['Premium'],
       },
       {
-        id: "180 Thermal",
-        imgPath: "/images/Samples/180Thermal.png",
-        src: "https://180Thermal.com",
-        tags: ["e-commerce", ""],
+        id: '180 Thermal',
+        imgPath: '/images/Samples/180Thermal.png',
+        src: 'https://180Thermal.com',
+        tags: ['e-commerce', ''],
       },
       {
-        id: "Hyperion Web",
-        imgPath: "/images/Samples/Jaybird.png",
-        src: "https://hyperionweb.dev",
-        tags: ["e-commerce", "Premium"],
+        id: 'Hyperion Web',
+        imgPath: '/images/Samples/Jaybird.png',
+        src: 'https://hyperionweb.dev',
+        tags: ['e-commerce', 'Premium'],
+      },
+
+      {
+        id: 'Future You',
+        imgPath: '/images/Samples/futureyou.png',
+        src: 'https://futureyou.netlify.app',
+        tags: ['', 'App'],
       },
       {
-        id: "Local Web",
-        imgPath: "/images/Samples/localweblogo.png",
-        src: "https://ionia.localweb.co",
-        tags: ["Single Page"],
+        id: 'Ionia Apartments',
+        imgPath: '/images/engineering_ball.png',
+        src: 'https://ionia.apartments',
+        tags: [, 'App'],
       },
       {
-        id: "Future You",
-        imgPath: "/images/Samples/futureyou.png",
-        src: "https://futureyou.netlify.app",
-        tags: ["", "App"],
+        id: 'Hyperion Audits',
+        imgPath: '/images/engineering_ball.png',
+        src: 'https://hyperion-audits.netlify.app',
+        tags: [, 'App'],
       },
       {
-        id: "Hyperion Audits",
-        imgPath: "/images/engineering_ball.png",
-        src: "https://hyperion-audits.netlify.app",
-        tags: [, "App"],
+        id: 'Quantum Thought Co.',
+        imgPath: '/images/engineering_ball.png',
+        src: 'https://quantumthought.co',
+        tags: [, 'Premium'],
       },
       {
-        id: "Quantum Thought Co.",
-        imgPath: "/images/engineering_ball.png",
-        src: "https://quantumthought.co",
-        tags: [, "Premium"],
+        id: 'Cafe Hyperion',
+        imgPath: '/images/Samples/coffee-cup.png',
+        src: 'https://cafe.hyperionweb.dev',
+        tags: ['Premium'],
       },
       {
-        id: "Cafe Hyperion",
-        imgPath: "/images/Samples/coffee-cup.png",
-        src: "https://cafe.hyperionweb.dev",
-        tags: ["Premium"],
+        id: 'Purus Masonry',
+        imgPath: '/images/Samples/coffee-cup.png',
+        src: 'https://purusmasonry.com',
+        tags: ['Premium'],
       },
       {
-        id: "Purus Masonry",
-        imgPath: "/images/Samples/coffee-cup.png",
-        src: "https://purusmasonry.com",
-        tags: ["Premium"],
-      },
-      {
-        id: "Temper Inc.",
-        imgPath: "/images/Samples/coffee-cup.png",
-        src: "https://temperinc.netlify.app",
-        tags: ["Premium"],
+        id: 'Temper Inc.',
+        imgPath: '/images/Samples/coffee-cup.png',
+        src: 'https://temperinc.netlify.app',
+        tags: ['Premium'],
       },
     ],
     devices: [
       {
-        name: "desktop",
-        imgPath: "",
-        iconPath: "/images/icons/pc.png",
+        name: 'desktop',
+        imgPath: '',
+        iconPath: '/images/icons/pc.png',
         width: 1281,
         height: 800,
         scale: 0.468384075,
@@ -102,9 +110,9 @@ function getPortfolio() {
         },
       },
       {
-        name: "tablet",
-        imgPath: "",
-        iconPath: "/images/icons/tablet.png",
+        name: 'tablet',
+        imgPath: '',
+        iconPath: '/images/icons/tablet.png',
         width: 768,
         height: 1024,
         scale: 0.390625,
@@ -121,9 +129,9 @@ function getPortfolio() {
         },
       },
       {
-        name: "mobile",
-        imgPath: "",
-        iconPath: "/images/icons/mobile.png",
+        name: 'mobile',
+        imgPath: '',
+        iconPath: '/images/icons/mobile.png',
         width: 360,
         height: 644,
         scale: 0.625,
@@ -170,7 +178,7 @@ function getPortfolio() {
     filterSpSites: function (tags) {
       var val = false;
       tags.forEach((e) => {
-        if (e == "Single Page") {
+        if (e == 'Single Page') {
           val = true;
         }
       });
@@ -179,7 +187,7 @@ function getPortfolio() {
     filterApps: function (tags) {
       var val = false;
       tags.forEach((e) => {
-        if (e == "App") {
+        if (e == 'App') {
           val = true;
         }
       });
@@ -188,7 +196,7 @@ function getPortfolio() {
     filterPremiumSites: function (tags) {
       var val = false;
       tags.forEach((e) => {
-        if (e == "Premium") {
+        if (e == 'Premium') {
           val = true;
         }
       });
@@ -196,8 +204,8 @@ function getPortfolio() {
     },
     checkResize: function () {
       this.getSize();
-      window.addEventListener("resize", () => {
-        console.log("resize");
+      window.addEventListener('resize', () => {
+        console.log('resize');
         //set breakpoint to window size
         this.getSize();
       });
@@ -208,11 +216,11 @@ function getPortfolio() {
       console.log(this.breakpoint);
 
       if (this.breakpoint >= 480 && this.breakpoint <= 768) {
-        console.log("responsive: tablet");
+        console.log('responsive: tablet');
       } else if (this.breakpoint <= 480) {
-        console.log("responsive: phone");
+        console.log('responsive: phone');
       } else {
-        console.log("responsive: desktop");
+        console.log('responsive: desktop');
       }
 
       this.updateDevice(this.device);
